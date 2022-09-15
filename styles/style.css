@@ -46,12 +46,14 @@ footer{
 .banner-details{
     background: #161616;
     border-radius: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
     padding: 33px 70px 0  106px;
+    height: 613px;
 }
 .details{
-    padding-top: 78px;
+    padding: 78px 0 0;
+    width: 531px;
 }
 .details h1, p, .btn{
     color: #FFFFFF;
@@ -65,6 +67,9 @@ footer{
     font-size: 16px;
     line-height: 26px;
     padding-bottom: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .details .btn{
     background: #DD0000;
@@ -80,7 +85,10 @@ footer{
 }
 .banner{
     display: flex;
-    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+.banner img{
+    height: 100%;
 }
 /* -----------------------
        Live Reports
@@ -90,13 +98,13 @@ footer{
     justify-content: space-between;
 }
 .navigation{
-    width: 312px;
     height: 312px;
     background: #161616;
     border-radius: 10px;
 }
 .nav-bar{
     padding: 30px;
+    width: 252px;
 }
 .nav-bar ul{
     display: flex;
@@ -132,13 +140,15 @@ footer{
 }
 .live-news{
     width: 312px;
-    height: 362px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px #0000000d;
     
 }
 .live-news img{
     display: block;
+    width: 100%;
+    height: 175px;
+    border-radius: 10px 10px 0 0;
 }
 .news-details{
     padding: 20px;
@@ -174,6 +184,38 @@ footer{
 .news-icons .fa-regular{
     padding-right: 10px;
 }
+.live-matches{
+    width: 252px;
+    height: 136px;
+    padding: 53px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 2px #0000000d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: flex-start;
+}
+.flags{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.flags img{
+    height: 56px;
+    width: 93px;
+}
+.live-matches h3{
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+}
+.live-matches span{
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
 /* -----------------------
        footer-area
 ------------------------ */
@@ -192,9 +234,6 @@ footer{
 .footer-area hr{
     border: 1px solid #ffffff1a;
     margin: 50px 0;
-}
-.footer-nav{
-
 }
 .footer-nav ul{
     display: flex;
