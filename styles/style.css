@@ -1,0 +1,226 @@
+/* -----------------------
+       Google Fonts
+------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* -----------------------
+       Common Styles
+------------------------ */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    margin: 50px 0 0;
+}
+header, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1320px;
+    margin-bottom: 130px; 
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    background: #161616;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+/* -----------------------
+       Top Banner
+------------------------ */
+.banner-details{
+    background: #161616;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 33px 70px 0  106px;
+}
+.details{
+    padding-top: 78px;
+}
+.details h1, p, .btn{
+    color: #FFFFFF;
+}
+.details h1{
+    font-size: 70px;
+    line-height: 80px;
+    padding-bottom: 20px;
+}
+.details p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+.details .btn{
+    background: #DD0000;
+    border-radius: 5px;
+    width: 187px;
+    line-height: 56px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+.details .btn .fa-chevron-right{
+    padding-left: 10px;
+}
+.banner{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* -----------------------
+       Live Reports
+------------------------ */
+.live-reports{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+}
+.nav-bar{
+    padding: 30px;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 252px;
+}
+.nav-bar li a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 64px;
+    color: #161616;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+}
+.nav-bar li a.active{
+    background: #DD0000;
+    color: #FFFFFF;
+    transition: background-color 0.6s ease;
+}
+.nav-bar li a:hover{
+    background: #DD0000;
+    color: #FFFFFF;
+    transition: background-color 0.6s ease;
+}
+.live-articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.live-news{
+    width: 312px;
+    height: 362px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #0000000d;
+    
+}
+.live-news img{
+    display: block;
+}
+.news-details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 147px;
+}
+.news-details h3, button{
+    color: #161616;
+}
+.news-details button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.news-details h3{
+    font-size: 18px;
+    line-height: 27px;
+}
+.news-details span{
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616B2;
+}
+.news-icons span:last-child{
+    padding-left: 30px;
+}
+.news-icons .fa-regular{
+    padding-right: 10px;
+}
+/* -----------------------
+       footer-area
+------------------------ */
+.container.footer-area{
+
+}
+.footer-area{
+    padding-top: 130px;
+}
+.footer-area h1{
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+}
+.footer-area hr{
+    border: 1px solid #ffffff1a;
+    margin: 50px 0;
+}
+.footer-nav{
+
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+}
+.footer-nav li a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #B9B9B9;
+}
+.social ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.social{
+    margin-top: 50px;
+}
+.social li a{
+    font-size: 60px;
+    color: #B9B9B9;
+    display: flex;
+}
+
+
+
+
+
