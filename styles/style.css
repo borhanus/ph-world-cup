@@ -71,7 +71,7 @@ footer{
     line-height: 26px;
     padding-bottom: 30px;
 }
-.details .btn{
+.btn{
     background: #DD0000;
     border-radius: 5px;
     width: 187px;
@@ -80,7 +80,7 @@ footer{
     cursor: pointer;
     border: none;
 }
-.details .btn .fa-chevron-right{
+.btn .fa-chevron-right{
     padding-left: 10px;
 }
 .banner{
@@ -88,7 +88,6 @@ footer{
     grid-template-columns: repeat(1, 1fr);
     justify-items: end;
     align-items: end;
-
 }
 .banner img{
     max-width: 100%;
@@ -182,6 +181,9 @@ footer{
 }
 .news-icons .fa-regular{
     padding-right: 10px;
+}
+.live-reports .btn{
+    display: none;
 }
 .live-matches{
     width: 100%;
@@ -315,6 +317,14 @@ footer{
     }
     .live-articles{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .tablet-view-all{
+        display: none;
+    }
+    .live-reports .btn{
+        display: inline;
+        margin: 30px auto 0;
+
     }
     /* footer */
     .footer-nav ul{
