@@ -84,7 +84,11 @@ footer{
     padding-left: 10px;
 }
 .banner{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: end;
+    align-items: end;
+
 }
 .banner img{
     max-width: 100%;
@@ -261,7 +265,9 @@ footer{
     .container{
         width: 100%;
     }
-
+    .banner img{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:834px) and (min-width:376px){
@@ -272,6 +278,9 @@ footer{
     .banner-details{
         grid-template-columns: repeat(2, 1fr);
         padding: 33px 17px 0 76px;
+    }
+    .banner img{
+        width: 70%;
     }
     .details h1{
         font-size: 40px;
@@ -329,7 +338,9 @@ footer{
         padding: 33px 33px 0;
         row-gap: 30px;
     }
-   
+    .banner{
+        justify-items: center;
+    }
     .details{
         text-align: center;
         display: grid;
